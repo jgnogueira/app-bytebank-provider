@@ -1,7 +1,8 @@
+import 'package:bytebank/models/saldo.dart';
 import 'package:flutter/material.dart';
 
 class SaldoCard extends StatelessWidget {
-  final double saldo;
+  final Saldo saldo;
 
   SaldoCard(this.saldo);
   Widget build(BuildContext context) {

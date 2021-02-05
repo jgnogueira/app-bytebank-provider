@@ -8,7 +8,7 @@ class Dashboard extends StatelessWidget {
         title: const Text('Bytebank'),
       ),
       body: Align(
-        child: Saldo(),
+        child: SaldoCard(10.0),
         alignment: Alignment.topCenter,
       ),
     );

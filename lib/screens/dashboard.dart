@@ -1,3 +1,4 @@
+import 'package:bytebank/components/saldo.dart';
 import 'package:flutter/material.dart';
 
 class Dashboard extends StatelessWidget {
@@ -6,7 +7,7 @@ class Dashboard extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Bytebank'),
       ),
-      body: Text('40.0'),
+      body: Saldo(),
     );
   }
 }

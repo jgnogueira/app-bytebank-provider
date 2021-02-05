@@ -7,7 +7,10 @@ class Dashboard extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Bytebank'),
       ),
-      body: Saldo(),
+      body: Align(
+        child: Saldo(),
+        alignment: Alignment.topCenter,
+      ),
     );
   }
 }

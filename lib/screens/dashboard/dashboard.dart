@@ -1,4 +1,4 @@
-import 'package:bytebank/components/saldo.dart';
+import 'package:bytebank/screens/dashboard/saldo.dart';
 import 'package:flutter/material.dart';
 
 class Dashboard extends StatelessWidget {

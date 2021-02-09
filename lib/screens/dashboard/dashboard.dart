@@ -20,7 +20,17 @@ class Dashboard extends StatelessWidget {
               onPressed: () {
                 saldo.adicionar(10.0);
               },
-              child: Text('Adiciona'),
+              child: Text('Adicionar'),
+            );
+          },
+        ),
+        Consumer<Saldo>(
+          builder: (context, saldo, child) {
+            return RaisedButton(
+              onPressed: () {
+                saldo.subtrair(10.0);
+              },
+              child: Text('Subtrair'),
             );
           },
         ),

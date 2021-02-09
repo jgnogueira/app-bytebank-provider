@@ -32,16 +32,6 @@ class Dashboard extends StatelessWidget {
             );
           },
         ),
-        Consumer<Saldo>(
-          builder: (context, saldo, child) {
-            return RaisedButton(
-              onPressed: () {
-                saldo.subtrair(10.0);
-              },
-              child: Text('Subtrair'),
-            );
-          },
-        ),
       ]),
     );
   }

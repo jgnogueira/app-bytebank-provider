@@ -17,6 +17,7 @@ class Dashboard extends StatelessWidget {
           alignment: MainAxisAlignment.center,
           children: <Widget>[
             RaisedButton(
+              color: Colors.green[900],
               onPressed: () {
                 Navigator.push(
                   context,

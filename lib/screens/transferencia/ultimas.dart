@@ -20,6 +20,10 @@ class UltimasTransferencias extends StatelessWidget {
           final _quantidade = transferencias.transferencias.length < 3
               ? transferencias.transferencias.length
               : 2;
+
+          if (_quantidade == 0) {
+            return SemTransferenciaCadastrada();
+          }
           return ListView.builder(
             itemBuilder: (context, indice) {
               return ItemTransferencia(
@@ -42,9 +46,24 @@ class UltimasTransferencias extends StatelessWidget {
               ),
             );
           },
-          child: Text('Transferências'),
+          child: Text('Ver Todas Transferências'),
         ),
       ],
+    );
+  }
+}
+
+class SemTransferenciaCadastrada extends StatelessWidget {
+  Widget build(BuildContext context) {
+    return Card(
+      margin: EdgeInsets.all(40),
+      child: Padding(
+        padding: EdgeInsets.all(10),
+        child: Text(
+          'Você ainda não cadastrou nenhuma transferência!',
+          textAlign: TextAlign.center,
+        ),
+      ),
     );
   }
 }

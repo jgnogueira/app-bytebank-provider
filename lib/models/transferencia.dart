@@ -7,8 +7,11 @@ class Transferencia {
     this.numeroConta,
   );
 
-  @override
-  String toString() {
-    return 'Transferencia: {valor: $valorTransferencia, numeroConta: $numeroConta}';
+  String toStringValor() {
+    return 'R\$ $valorTransferencia';
+  }
+
+  String toStringConta() {
+    return '$numeroConta';
   }
 }

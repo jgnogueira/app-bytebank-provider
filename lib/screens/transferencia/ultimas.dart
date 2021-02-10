@@ -15,13 +15,16 @@ class UltimasTransferencias extends StatelessWidget {
           ),
         ),
         Consumer<Transferencias>(builder: (context, transferencias, child) {
+          final _quantidade = transferencias.transferencias.length < 3
+              ? transferencias.transferencias.length
+              : 2;
           return ListView.builder(
             itemBuilder: (context, indice) {
               return ItemTransferencia(
                   transferencia: transferencias.transferencias[indice]);
             },
             padding: const EdgeInsets.all(8),
-            itemCount: 2,
+            itemCount: _quantidade,
             shrinkWrap: true,
           );
         }),
